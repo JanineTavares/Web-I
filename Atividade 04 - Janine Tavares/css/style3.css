@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+
+nav {
+ text-align: center;
+ background-color: rgba(15, 181, 204, 0.84);
+ border-radius: 0px 0px 10px 10px;
+ align-items: center;
+ list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  padding-right: 25px;
+  color: rgb(255, 255, 255);
+}
+
+nav a {
+  text-decoration: none;
+	font-family: Cambria, serif;
+	line-height: 1.3em;
+	color: rgb(255, 255, 255);
+  text-decoration: underline;
+}

@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
+
+/* Todos os webkits são propriedades de suporte a navegadores então são usados para dar suporte a funções que podem modificar de navegador para navegador */
+*{
+	margin: 0; /*margem externa*/
+	padding: 0; /*margem interna*/
+}
+body{
+	font-family: 'Open Sans', 'sans-serif'; /*a fonte que vai ser usada*/
+	font-size: 13px; /*tamanho da fonte*/
+	font-weight: 300; /*grossura da fonte*/
+	background-color: rgb(94, 47, 47); /*cor de fundo do body*/
+}
+
+/* GALLERY */
+
+.gallery {
+	width: 980px;  /*largura do container*/
+	margin: 0 auto; /*margem externa*/
+	overflow: hidden; /*não criar barra de rolagem*/
+	display: -webkit-flex; /*o webkit refere-se ao suporte para alguns navegadores*/
+	display: flex;  /*torna a medida flexivel para alinhar os elementos na tela */
+	-webkit-flex-flow: row wrap; /*suporte para alguns navegadores*/
+  	flex-flow: row wrap; /*Deixar as fotos uma ao lado da outra em linha e fazendo ajustes necessarios*/
+		background-color: rgb(46, 20, 168); /*cor de plano de fundo*/
+}
+.gallery li{
+	position:  relative; /**/
+	width: 33.333%; /*largura do container*/
+	float: left; /*para onde as fotos devem flutuar*/
+	padding: 0.625rem; /*margem interna*/
+	display: -webkit-flex; /*o webkit refere-se ao suporte para alguns navegadores*/
+	display: flex;  /*torna a medida flexivel para alinhar os elementos na tela */
+	-webkit-box-sizing: border-box; /*Não permite que largura e altura saia para fora do container pai*/
+	box-sizing: border-box; /*Não permite que largura e altura saia para fora do container pai*/
+	-webkit-transition: width 0.3s ease-out; /*Duração de animação de transição de um estado para o outro*/
+	transition: width 0.3s ease-out; /*Duração de animação de transição de um estado para o outro*/
+}
+.gallery li .box {
+	position:relative; /*posição do container em relação a posição inicial*/
+	padding: 6px 6px 30px 6px; /*margem interna*/
+	background-color: #fff; /*cor de fundo do body*/
+}
+	overflow: hidden; /*não criar barra de rolagem*/
+}
+.gallery li figure{
+	display: block; /*exibição em bloco*/
+	width: 100%; /*largura do container*/
+	margin-bottom: 6px; /*margens de baixo*/
+}
+.gallery li img{
+	width: 100%; /*largura do container*/
+	height: auto; /*altura do container*/
+}
+.gallery li h3{
+	margin-bottom: 6px; /*margens de baixo*/
+	font-size: 17px; /*tamanho da fonte*/
+	font-weight: bold; /*grossura da fonte*/
+	line-height: 100%; /*altura da linha*/
+	text-transform: uppercase; /*Texto em caixa-Alta*/
+	color: #000; /*cor da fonte*/
+}
+.gallery li time{
+	position:absolute; /*posição do container em relação a posição inicial*/
+	bottom:0; /*posição vertical do container posicionado*/
+	left:0; /*posição horizontal do container posicionado*/
+	width: 100%; /*largura do container*/
+	padding: 6px; /*margem interna*/
+	font-weight: 400; /*grossura da fonte*/
+	text-align: center; /*alinhamento do texto centralizado*/
+
+	-webkit-box-sizing: border-box; /*Não permite que largura e altura saia para fora do container pai*/
+	box-sizing: border-box; /*Não permite que largura e altura saia para fora do container pai*/
+}
+
+.gallery li:nth-child(even) .box {
+	background: rgba(190, 231, 28, 0.44); /*Mudar plano de fundo dos container em numero pares*/
+}
+
+/* EXTRA - Pitadinha - MEDIA QUERIES */
+@media screen and (max-width:992px) {
+
+	.gallery {
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width:768px) {
+
+	.gallery li {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width:468px) {
+
+	.gallery li {
+		width: 100%;
+	}
+
+}

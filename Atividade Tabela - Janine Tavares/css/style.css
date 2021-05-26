@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+body {
+  background-image: url(../img/fundo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#botaoCadastro {
+  font-weight: bold;
+  color: rgb(41, 159, 12);
+  background-color: rgba(255, 255, 255, 1);
+  background-size: 20px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+  border-radius: 2px 2px 2px 2px;
+  border: 2px solid rgb(41, 159, 12);
+  padding: 3px;
+}
+
+#Fornecedor {
+  font-weight: bold;
+  color: rgb(41, 159, 12);
+  background-size: 20px;
+  float: left;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding: 3px;
+}
+
+
+
+
+main {
+  background-color: rgba(18, 76, 153, 0.53);
+  height: 10%;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
+  padding-bottom: 10px;
+
+}
+
+
+h3 {
+  color: rgb(255, 255, 255);
+    padding-top: 150px;
+    background-color: rgba(82, 124, 14, 0.65);
+
+}
+
+table {
+  text-align: center;
+    width: 95%;
+    border-collapse: collapse;
+    border: 1px solid rgba(179, 185, 194, 0.6);
+    margin: auto;
+    padding: 25px;
+    border: 1px solid rgb(0, 0, 0);
+
+
+}
+
+
+table th {
+  background-color: rgba(133, 230, 240, 0.56);
+  border: 1px solid rgba(179, 185, 194, 0.6);
+
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(162, 170, 162, 0.47);
+  border: 1px solid rgba(179, 185, 194, 0.6);
+
+
+}
+
+table td {
+
+  border: 1px solid rgba(179, 185, 194, 0.6);
+
+}

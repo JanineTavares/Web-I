@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+.geral {
+  width: 100%;
+}
+ .topo {
+   width: 100%;
+   height: 250px;
+   background-color: rgba(126, 224, 122, 0.72);
+   line-height: 250px;
+   text-align: center;
+   font-family: 'Merienda', cursive;
+ }
+.menu {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(70, 17, 138);
+}
+
+.conteudo {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(9, 136, 64);
+}
+
+.caixas {
+  width: 25%;
+  height: 350px;
+  background-color: rgba(20, 107, 94, 0.64);
+  border-radius: 20px;
+  float: left;
+  margin-left: 6.25%;
+  margin-top: 6.25%;
+
+}
+
+.rodape {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(2, 74, 122);
+  line-height: 50px;
+  text-align: center;
+
+}

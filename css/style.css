@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-image: url(../img/fundo.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.titulos {
+  background-color: rgba(14, 13, 87, 0.47);
+  height: 46px;
+  width: 100%;
+  padding-top: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 10px 10px 10px 10px;
+
+
+}
+.principal {
+  background-color: rgba(11, 16, 74, 0.96);
+  width:80%;
+  height:100%;
+  padding: 15px;
+  margin:auto;
+  border-radius: 10px 10px 10px 10px;
+  color: rgb(255, 255, 255);
+}
+
+ul {
+  margin: 50px;
+}
+
+ul li {
+  margin: 15px;
+}
+#subtitulo {
+  margin-top: 25px;
+  margin-left: 25px;
+
+}
+
+p {
+  margin-top: 15px;
+  margin-left: 25px;
+}

@@ -1,0 +1,761 @@
+@charset "UTF-8";
+
+
+body {
+  background:url(../img/background.png); /*inserção da imagem de fundo em todo o site*/
+  color:#868686; /*cor padrão para todas as fontes*/
+  font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
+  font-size: 1.125em; /*18px / 16px = 1.125em tamanho da fonte*/
+  font-weight: 300; /*indica que a fonte está configurada como Open Sans Light*/
+  line-height: 1.222em;/*22px / 18px = 1.222em altura da linha*/
+  text-align: left; /*alinhando o texto à esquerda*/
+  text-shadow: 1px 1px 0px #fff; /*sombreamento para as fontes do site na cor branca*/
+
+
+}
+
+.center {
+  margin: 0 auto; /*centralizando o conteúdo no navegador*/
+  width: 1200px; /*largura do layout*/
+  width: 90%;
+
+}
+
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+evitando que os floats se aglomerem. */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+
+}
+.clearfix:after {
+  clear: both;
+
+}
+/*fim do clearfix*/
+
+img, picture,  video,  embed {
+  max-width: 100%; /*define a largura máxima em até 100%*/
+
+
+}
+h1, h2{
+  color:#FE9380;/*cor das letras de cabeçalho de nivel 1 e 2*/
+  font-size: 60px;/*tamanho da fonte*/
+  font-weight: 800;/*"peso" da fonte (negrito)*/
+  letter-spacing: -3px; /*espaçamento entre as letras*/
+  line-height: 60px;/*altura das linhas (espaçamento entre as linhas ou kerning)*/
+
+
+
+}
+
+h3{
+  font-size:2em;/*tamanho da fonte*/
+  font-weight: 300;/*"peso" da fonte (negrito)*/
+  letter-spacing: -2px; /*espaçamento entre as letras*/
+  line-height: 38px; /*altura das linhas (espaçamento entre as linhas ou kerning)*/
+
+
+}
+
+p{
+  font-weight: 300;/*modifica a força da fonte para light*/
+  letter-spacing: -1px; /*espaçamento entre as letras*/
+
+
+}
+a, a:link, a:visited{
+  color:#FE9380; /*cor dos links*/
+  font-weight:400; /*modifica a força da fonte para "semi-bold"*/
+  text-decoration:none; /*retira o sublinhado dos links*/
+
+
+}
+a:hover{
+  color:#155E41; /*cor dos links no momento em que o mouse passa por cima dele*/
+  text-decoration:underline; /*insere uma linha sob o link quando passar o mouse*/
+  text-shadow:none; /*retira a sombra da fonte quando passar o mouse*/
+
+
+}
+
+/*Seção Header - borda, altura e largura*/
+header {
+  border-bottom: 1px solid #E0E0E0;
+  height:150px;  /*altura da imagem*/
+  width: 100%; /*1200px ± 1200px = 1 x 100 = 100%*/
+
+
+}
+
+/*
+==========================
+logotipo
+==========================
+*/
+header h1 a{
+  background:url(../img/logo-criar-site-responsivo.png) no-repeat; /*logotipo*/
+  display:block; /*torna o link como um bloco, um retângulo*/
+  float:left; /*posiciona o logotipo à esquerda do site*/
+  height:139px; /*altura da imagem*/
+  text-indent:-9999px; /*recuo para ocultar texto à esquerda*/
+  width: 25.166666666666665%; /*largura da imagem*/
+
+
+}
+
+/*
+=======================
+nav- menu navegaçao
+=======================
+*/
+
+nav {
+  float:right; /*posiciona menu à direita*/
+  margin-top:78px; /*distância do menu à margem superior do navegador*/
+  text-align:right; /*alinha os links à direita*/
+  width:66.6666666667%;/*largura da seção*/
+
+
+}
+nav ul {
+  list-style-type:none; /*retira os marcadores da lista*/
+
+
+}
+nav li{
+  display: inline; /*deixa o menu na horizontal*/
+
+}
+
+nav ul li a {
+  margin-right: 30px; /*espaço à direita de cada link do menu*/
+
+}
+nav ul li:nth-child(5) a{
+  margin-right: 0px; /*indica que o 5° elemento da lista (contato) terá a margem direita zerada*/
+
+}
+
+nav a:link, nav a:visited{
+  color:#999; /*muda a cor da onte*/
+  font-size: 1.375em; /*altera  tamanho da fonte*/
+  font-weight: 300;/*modifica a força da fonte para light*/
+  letter-spacing: -2px; /*espaçamento entre as letras*/
+  line-height: 26px;/*kerning da linha*/
+  display:inline-block;/*links um ao lado do outro*/
+
+}
+
+nav a.ativo:link, nav a:hover{
+  color:#FE9380; /*indica a página ativa e o link:hover*/
+
+}
+
+/*-----------------------------------------
+Seção .CHAMADA <<<<<=======================
+-----------------------------------------*/
+.chamada{
+  height:290px;/*altura do bloco*/
+  text-align:center;/*Centralizando o texto*/
+  width:100%;/*Definindo a largura*/
+
+}
+h2 span{
+  font-size: 60px;/*definindo um tamanho de fonte diferenciado*/
+  font-weight: 300;/*suavizando a força das letras*/
+  font-weight: 300;/*suavizando a força das letras*/
+  letter-spacing: -2px;/*espaçamento entre as letras*/
+  line-height: 60px;/*altura da linha*/
+
+}
+.chamada h3 {
+  margin: 0 auto;/*definindo a margem de cabeçalhos de nivel 3*/
+  width:75%; /*definindo uma largura fixa*/
+
+}
+/*----------------------------------------------------------------
+Seção .CONTAINER - Conteúdo com 3 colunas <<<<<===================
+-----------------------------------------------------------------*/
+
+.container{
+  background-color:#FE9481; /*cor do plano de fundo da div.*/
+  height: 417px; /*altura do bloco*/
+  padding:40px; /*espaçamento interno maior*/
+  width: 100%; /*definindo largura em porcentagem*/
+  max-width:1200px; /*largura máxima do bloco*/
+
+}
+
+img {
+  max-width: 100%; /*definindo uma largura maxima*/
+}
+
+.container .desktop figure, .container .tablet figure, .container .mobile figure {
+  width: 69.444444444444448%; /*definindo uma largura para container figure*/
+}
+
+
+.desktop, .tablet, .mobile{ /*DEFINICÃO DOS BLOCOS DE TEXTO UM AO LADO DO OUTRO*/
+  float:left; /*define o posicionamento do bloco para cia e esquerda.*/
+  position:relative; /*posicionamento responsivo*/
+  text-align:center; /*alinhamento do texto centralizado*/
+  width:31.57894136842105%; /*definindo uma largura*/
+
+
+}
+
+.desktop, .tablet{
+  margin-right: 2.631578947368421%; /*espaçamento entre os blocos*/
+
+}
+
+/* imagens */
+.container figure{
+  margin: 10px auto 0px auto; /*definindo uma largura */
+  text—align: center; /*Alinhar o texto no meio */
+  width: 250px; /*definindo uma largura */
+}
+
+
+
+.mobile{
+  background-color:#9C8CB9; /*muda a cor de fundo do bloco mobile*/
+  margin-right: 0px; /*margem da direita definida*/
+
+
+}
+.desktop{
+  background-color:#FE9481; /*muda a cor de Tudo do bloco desktop*/
+
+}
+.tablet{
+  background-color: #FCDA92; /*muda a cor de Tudo do bloco tablet*/
+
+
+}
+
+/*
+==============================
+formatação do texto
+=============================
+*/
+
+.container h3{
+  color:#fff; /*cor da letra branca*/
+  font-size: 32px; /*temanho da letra*/
+  font-weight: 300; /*definição do peso da fonte*/
+  letter-spacing: -2px; /*esoaço entre as letras*/
+  margin-bottom: 30px; /*espaçamento da margem inferior*/
+  text-shadow:none; /*remoção do sombreamento das letras*/
+}
+.container p{
+  background-color: #fff;/*cor do fundo dos parágrafos*/
+  float:left; /*posicionamento dos parágrafos*/
+  height:160px; /*definição da altura dos parágrafos*/
+  padding:7px; /*definição da margem interna dos parágrafos*/
+  position:absolute; /*posicionamento fixo dos parágrafos*/
+  max-width:360px; /*altura máxima*/
+  text-align:justify; /*alinhamento ustificado*/
+  top:225px; /*definição da margem do topo*/
+}
+
+/*
+===============================
+Formatação do botão
+===============================
+*/
+span.btn { /*Definição dos links "leia mais"*/
+font-size: 20px; /*tamanho da fonte*/
+font-weight: 400; /*peso da fonte*/
+letter-spacing : -2px; /*espaçamento das letras*/
+height: 27px; /*altura das letras*/
+margin-top:	30px; /*margem superior */
+position:absolute; /*posicionamento fixo*/
+right : 1px ; /*espaçamento A direita*/
+text-align:center; /*alinhamento centralizado */
+text-shadow : none ; /*sem sombreamento nas letras"*/
+width:120px; /*largura do span*/
+}
+
+span.btn a{
+  color: #fff; /*Definição da cor da fonte*/
+  padding: 2px 4px; /*espaçamento interno*/
+}
+/*
+==================================================
+Definição da cor de fundo de cada link "leia mais"
+================================================== */
+
+.desktop span.btn a {
+  background-color: #FE9481; /*plano de fundo para botão "leia mais" */
+}
+
+.tablet span.btn a {
+  background-color: #FCDA92; /*plano de fundo para botão "leia mais" */
+}
+
+.mobile span.btn a {
+  background-color: #9C8CB9; /*plano de fundo para botão "leia mais" */
+}
+
+/*--------------------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas <<<<<=============================
+--------------------------------------------------------------------*/
+footer{
+  clear:both; /*define o posicionamento*/
+  height: 50px; /*altura*/
+  padding: 10px 0px; /*espaçamento interno*/
+  width:100%; /*largura*/
+}
+
+.copyright{
+  /* width: 40%; */
+  /* background-color: rgb(185, 15, 255); */
+  float:left; /*posicionamento acima e à esquerda*/
+  margin-left:10px; /*margem esquerda*/
+}
+
+.desenvolvedor {/*posicionamento do Logo*/
+  /* width: 40%; */
+  /* background-color: rgb(80, 19, 106); */
+  float:right; /*posicionamento acima e à esquerda*/
+  margin-right:10px; /*margem esquerda*/
+}
+
+
+.desenvolvedor figure { /*largura do logo*/
+  width: 182px; /*largura*/
+}
+
+
+
+/* =======================================
+MEDIA QUERIES
+1200 px - Desktops, notebooks com monitores widescreen
+======================================== */
+@media screen and (max-width: 1200px) {
+
+  .container {
+    width: 92.5%;
+  }
+  .chamada h3 {
+    font—size : 1.66666666667em;
+  }
+  .container h3 {
+    font—size: 1.55555555556em;
+  }
+  .container p{
+    height: 170px;
+    top:217px;
+  }
+
+  footer{
+    clear:both;
+    height: 50px;
+    padding: 10px 0px;
+    width:100%;
+  }
+
+  .copyright{
+    float:left;
+    margin-left:30px;
+  }
+
+  .desenvolvedor {
+    padding-right: 10px;
+    float:right;
+  }
+}
+
+/* 960px — Tablets no formato paisagem e alguns monitores mais antigos */
+@media screen and (max-width: 960px) {
+
+
+  header h1 a {
+    width: 37.5%;
+  }
+  nav {
+    width: 62.5%;
+  }
+  h2 {
+    font-size: 2.6666666667em;
+  }
+
+  .chamada {
+    height: 250px;
+
+  }
+  .chamada h3 {
+    font-size: 1.5em;
+    width: 88.54166666666667%;
+
+  }
+
+  .container {
+    height: 425px;
+    padding: 3.125%;
+    width: 93.75%;
+  }
+
+  .desktop, .tablet, .mobile {
+    width: 31.45833333333333%;
+  }
+
+  .container .desktop figure, .container .tablet figure, .container .mobile figure {
+    width: 66.22516556291391%;
+  }
+
+  .container img {
+    height: 100px;
+  }
+
+  .container h3 {
+    font-size: 1.6666666667em;
+  }
+
+  .container p {
+    font-size: 0.8333333333em;
+    top: 230px;
+  }
+
+  footer{
+    clear:both;
+    height: 50px;
+    padding: 10px 0px;
+    width:99.9%;
+  }
+
+  .copyright{
+    float:left;
+    margin-left:30px;
+  }
+
+  .desenvolvedor {
+    padding-right: 10px;
+    padding-top: 0px;
+    float:right;
+  }
+
+
+}
+/* ================================================
+768 - Tablets no formato retrato, como o Ipad
+================================================ */
+@media screen and (max-width: 768px) {
+
+
+  h2, a, a:link, a:visited{
+    color: #FBCA61;
+  }
+
+  a:hover {
+    color: #F9AD0F;
+  }
+
+  header {
+    height: 195px;
+    text-align: center;
+  }
+
+
+  header h1 a {
+    background-position: 57% 0;
+    height: 126px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a.ativo:link, nav a:hover {
+    color: #FBCA61;
+  }
+
+  .chamada {
+    height: 200px;
+  }
+
+  h2{
+
+    font-size: 2.2222222222em;
+  }
+  .chamada h3 {
+    height: 150px;
+    font-size: 1.1111111111em;
+  }
+
+  .container {
+    margin-top: 45px;
+    background-color: #FCDA92;
+    height: 380px;
+    padding: 3.90625%;
+    width: 92.1875%;
+  }
+
+  .desktop, .tablet, .mobile {
+    width: 31.25%;
+  }
+
+  .container .desktop figure, .container .tablet figure, .container .mobile figure {
+    width: 62.25%;
+  }
+
+  .container img {
+    height: 80px;
+  }
+
+  .container h3 {
+    font-size: 1.6666666667em;
+  }
+
+  .container p {
+    font-size: 0.777777777em;
+    height: 150px;
+    line-height: 1.1428571428em;
+    padding: 2.9166666667%;
+    top: 215px;
+  }
+
+  span.btn {
+    font-size: 1.1111111111em;
+    letter-spacing:  -0.1em;
+    height: 22px;
+    margin-top: 20px;
+    position: absolute;
+    width: 50%;
+  }
+
+  span.btn a{
+    padding: 2px 3.333333333333333%;
+  }
+}
+
+
+/* =======================================================
+480px - smartphones no formato paisagem com tela pequena
+======================================================== */
+@media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  header {
+    border-bottom: none;
+    height: auto;
+    text-align: center;
+  }
+
+  header h1 a {
+    background-position: 50% 0;
+    display: inherit;
+    height: 126px;
+    width: 100%;
+  }
+
+  nav {
+    clear: both;
+  }
+
+  nav li {
+    background-color: #9C8CB9;
+    display: block;
+  }
+
+  nav ul li a{
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 3px;
+    text-align: center;
+    text-shadow: none;
+    width: 100%;
+  }
+
+
+  nav li a:link {
+    color: #fff;
+    font-size: 1.388888889em;
+  }
+
+  nav li a.ativo:link, nav li a:hover, nav li a:visited {
+    background-color: #745F9A;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav li a.ativo:hover, nav li a.ativo:visited {
+    background-color: #9C8CB9;
+  }
+
+
+  .chamada {
+    color: rgb(106, 61, 200);
+    font-size: 25px;
+    height: 130px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  h2 {
+    color: rgb(91, 50, 231);
+    line-height: 25px;
+    font-size: 1.1em;
+    margin: 12px;
+    letter-spacing:  -0.0769230769230769em;
+    margin-top: 5px;
+  }
+
+  h2 span {
+    font-size: 1.2em;
+  }
+
+  .chamada h3 {
+    display: none;
+    font-size: 0.7777777778em;
+  }
+
+  .container {
+    background-color: #9C8CB9;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .container .desktop, .container .tablet, .container .mobile {
+    float: none;
+    height: 160px;
+    width: 100%
+  }
+
+  .container .desktop figure, .container .tablet figure, .container .mobile figure {
+    float: left;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    width: 53.125%;
+  }
+
+  .container h3 {
+    float: left;
+    margin-top: 30px;
+    width: 46.875%;
+  }
+
+  .container .desktop figure img, .container .tablet figure img, .container .mobile figure img {
+    height: 125px;
+    margin-top: 15px;
+    width: 86.2745098040%;
+  }
+
+  .container p{
+    display: none;
+  }
+
+  .copyright, .desenvolvedor {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .desenvolvedor figure {
+    width: inherit;
+  }
+}
+
+/* =======================================================
+320px - smartphones no formato retrato com tela pequena
+======================================================== */
+@media screen and (max-width: 320px) {
+  h2, a, a:link, a:visited {
+    color: #79E1D5;
+  }
+
+  a:hover {
+    color: #2FD0BC;
+  }
+
+  nav li {
+    background-color: #79E1D5;
+  }
+  nav li a:link {
+    color: #555;
+  }
+  nav li a.ativo:link, nav li a:hover, nav li a:visited {
+    background-color: #2FD0BC;
+    color: #fff;
+  }
+  nav li a.ativo:hover, nav li a.ativo:visited {
+    background-color: #2FD0BC;
+
+  }
+
+  .chamada {
+    height: 110px;
+    margin-top: 10px;
+
+  }
+
+  .chamada h2 {
+    font-size: 0.85896em;
+    margin-bottom: 5px;
+  }
+
+  h2 span {
+    font-size: 0.85896em;
+  }
+
+
+  .chamada h3 {
+    font-size: 0.7777777778em;
+  }
+
+  .container .desktop .container .tablet .container .mobile {
+    float: none;
+    height: 160px;
+    width: 100%;
+  }
+  .container .desktop figure, .container .tablet figure, .container .mobile figure {
+    float: none;
+    width: 100%;
+  }
+
+  .container h3 {
+    display: none;
+  }
+  .container p {
+    display: none;
+  }
+  footer{
+    align-items: center;
+    margin-top: 90px;
+    clear:both;
+    height: 50px;
+    padding: 10px 0px;
+    width:98.5%;
+  }
+
+  .copyright{
+    float:left;
+    margin-left:30px;
+  }
+
+  .desenvolvedor {
+    padding-right: 10px;
+    float:left;
+  }
+
+
+  .desenvolvedor figure {
+    width: 182px;
+  }
+
+}

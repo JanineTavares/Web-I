@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-image: url(../img/plano.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.titulos {
+  background-color: rgba(14, 13, 87, 0.47);
+  height: 46px;
+  width: 100%;
+  padding-top: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 10px 10px 10px 10px;
+
+
+}
+.principal {
+  background-color: rgba(11, 16, 74, 0.96);
+  width:80%;
+  height:100%;
+  padding: 15px;
+  margin:auto;
+  border-radius: 10px 10px 10px 10px;
+  color: rgb(255, 255, 255);
+}
+
+ul {
+  margin: 50px;
+}
+
+ul li {
+  margin: 15px;
+}
+#subtitulo {
+  margin-top: 25px;
+  margin-left: 25px;
+
+}
+
+p {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+
+nav {
+ text-align: center;
+ background-color: rgba(15, 181, 204, 0.84);
+ border-radius: 0px 0px 10px 10px;
+ align-items: center;
+ list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  padding-right: 25px;
+  color: rgb(255, 255, 255);
+}
+
+nav a {
+  text-decoration: none;
+	font-family: Cambria, serif;
+	line-height: 1.3em;
+	color: rgb(255, 255, 255);
+  text-decoration: underline;
+}

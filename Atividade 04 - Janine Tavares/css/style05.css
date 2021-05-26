@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+
+body {
+  background-image: url(../img/fundo1.jpg);
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100%;
+}
+
+h1 {
+  color: rgb(240, 245, 7);
+  text-align: center;
+
+}
+.container {
+  background-color: rgba(70, 7, 115, 0.77);
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
+  padding: 25px;
+}
+
+figure img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+img:hover {
+  transform: scale(4,4);
+}
+
+p {
+  color: rgb(255, 255, 255);
+  text-indent: 10px;
+}
+
+
+ul {
+  color: rgb(255, 255, 255);
+}
+
+ul li {
+
+  padding: 10px;
+
+}
+
+h3 {
+  color: rgb(237, 250, 1);
+}
+
+
+cite {
+  color: rgb(255, 255, 255);
+}
+
+
+nav {
+ text-align: center;
+ background-color: rgba(138, 0, 246, 0.84);
+ border-radius: 10px 10px 10px 10px;
+ align-items: center;
+ list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  padding-right: 25px;
+  color: rgb(255, 255, 255);
+}
+
+nav a {
+  text-decoration: none;
+	font-family: Cambria, serif;
+	line-height: 1.3em;
+	color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
