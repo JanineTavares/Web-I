@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.jumbotron{
+  margin-bottom: 0 !important;
+  background-color: rgba(14, 88, 138, 0.83)!important;
+  color: rgb(255, 255, 255);
+  border-radius: 0px !important;
+}
+nav {
+  border-radius: 0px 0px 5px 5px !important;
+}
